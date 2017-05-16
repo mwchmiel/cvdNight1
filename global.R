@@ -14,7 +14,7 @@ dataset$patientID <- as.character(dataset$patientID)
 #make this variable an ordered categorical variable
 dataset$age <- ordered(dataset$age)
 
-
+dataset<- dataset %>% filter(race =="Black/AfAm")
 
 
 ##Don't modify anything below here, or app won't work properly.
